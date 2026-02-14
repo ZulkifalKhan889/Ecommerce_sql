@@ -393,14 +393,7 @@ ORDER BY discount DESC;
 
 
 
-########################## INSIGHTS NO 5 ##################
 
-#lets check whether the shipping method affect the return rate not good insights get it out of portfolio
-
-select Shipping_method, round(avg(Return_rate),2) as return_rate  from sales
-
-group by Shipping_method 
-order by avg(Return_rate) desc;
 
 
 
