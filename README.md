@@ -16,7 +16,6 @@ The dataset contains transactional ecommerce data including:
 - **Shipping**: Method and cost  
 - **Product metrics**: Stock levels, popularity index, return rates, seasonality  
 
-> *Note:* The dataset included here is a sample version suitable for reproduction.
 
 ---
 
@@ -50,7 +49,6 @@ The queries in this project answer important business questions, including:
 10. **City-wise Product Popularity**: Evaluated product performance across different cities.  
 11. **High-Spending Customers with High Returns**: Identified customer segments that may impact profitability.  
 
-> Each query is well-commented in `ecommerce_queries.sql` to explain the logic and the insights derived.
 
 ---
 
