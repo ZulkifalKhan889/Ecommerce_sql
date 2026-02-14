@@ -1,33 +1,56 @@
 # Ecommerce SQL Analysis Project
 
 ## Project Overview
-This project demonstrates advanced SQL skills through the analysis of a real-world ecommerce dataset. The goal is to extract actionable business insights using MySQL queries. The repository includes the dataset, organized SQL queries for analysis, and insights derived from the data. It showcases practical SQL techniques for data analysis, aggregation, and reporting.
+This project demonstrates advanced SQL skills by analyzing a real-world ecommerce dataset. The goal is to extract actionable business insights using MySQL queries. The repository includes the dataset, structured SQL queries, and insights derived from the analysis. It highlights practical SQL techniques such as aggregation, filtering, joins, subqueries, and case statements.
+
+The project focuses purely on SQL, showcasing how data can be processed and interpreted to inform business decisions without relying on Python or visualization tools.
+
+---
 
 ## Dataset
-The dataset consists of ecommerce transactional records including:
+The dataset contains transactional ecommerce data including:
 
-- **Orders:** order IDs, order dates, order numbers  
-- **Products:** product IDs, names, categories, prices  
-- **Customers:** customer IDs, locations, repeat purchase behavior  
+- **Orders**: Order IDs, order dates  
+- **Products**: Product IDs, names, categories, prices, discounts, tax rates  
+- **Customers**: Age group, gender, city, country  
+- **Shipping**: Method and cost  
+- **Product metrics**: Stock levels, popularity index, return rates, seasonality  
 
-> *Note:* The dataset included here is a sample for demonstration purposes.
+> *Note:* The dataset included here is a sample version suitable for reproduction.
+
+---
 
 ## SQL Skills Demonstrated
-This project highlights proficiency in the following SQL concepts:
+The project showcases SQL proficiency in areas such as:
 
-- Writing **SELECT** statements for data retrieval  
-- Using **JOINs** to combine multiple tables  
-- Applying **GROUP BY** and **aggregation functions** (SUM, COUNT, AVG)  
-- Filtering data with **WHERE** and **HAVING** clauses  
-- Sorting and ranking results using **ORDER BY**  
-- Generating business insights through **subqueries** and **nested queries**
+- SELECT queries for data retrieval  
+- GROUP BY with aggregation (SUM, COUNT, AVG, MAX)  
+- Filtering with WHERE and HAVING clauses  
+- JOIN operations for combining tables  
+- Subqueries and nested queries  
+- Conditional logic using CASE statements  
+- Data cleaning and transformation (splitting Customer_location into city and country)  
+- Revenue, discount, and return rate calculations  
+- Identifying trends, high-demand products, and customer behavior  
 
-## Key Analysis Questions & Insights
-The SQL queries are designed to answer key business questions, such as:
+---
 
-1. **Top Selling Products:** Identify the products generating the most revenue.  
-2. **Revenue Trends Over Time:** Analyze monthly or seasonal sales patterns.  
-3. **Customer Purchase Behavior:** Determine repeat vs. one-time customers and their contribution to revenue.  
-4. **Category Performance:** Rank product categories by sales and profitability.  
-5. **Order Analysis:** Evaluate average order value, quantities per order, and sales distribution.  
+## Key Business Insights Extracted
+The queries in this project answer important business questions, including:
+
+1. **Revenue by Product & Discounted Price**: Calculated total revenue and revenue per product after applying discounts.  
+2. **Top Selling Products & Categories**: Identified the most sold products and highest-grossing categories.  
+3. **Customer Segmentation**: Determined which age groups and genders contribute most to revenue, enabling targeted marketing.  
+4. **Product Demand Status**: Classified products as understocked, overstocked, or balanced based on popularity and stock level.  
+5. **Impact of Discounts on Popularity**: Determined which products are strong or discount-driven based on average popularity and discount.  
+6. **Country-Level Analysis**: Revenue contribution and return rates by country.  
+7. **Top Products by Popularity Index**: Ranked the most popular products.  
+8. **Return Rate Analysis**: Identified products with the highest return rates to detect potential issues.  
+9. **Average Order Value (AOV) by Country**: Though limited by dataset, the analysis concept is demonstrated.  
+10. **City-wise Product Popularity**: Evaluated product performance across different cities.  
+11. **High-Spending Customers with High Returns**: Identified customer segments that may impact profitability.  
+
+> Each query is well-commented in `ecommerce_queries.sql` to explain the logic and the insights derived.
+
+---
 
